@@ -16,6 +16,7 @@ import { MapPosition } from "../generated/types_pb";
 function tileToGrid(R: number, D: number, m: number): { X: number; Y: number } {
   const X = 2 * m * R + 4 * R - D;
   const Y = 2 * m * D + 4 * D + R;
+  console.log("Y");
   return { X, Y };
 }
 
